@@ -1,0 +1,168 @@
+newm python - args are ['/home/test/.local/bin/.start-newm', '-d']
+[INFO] config.py:73 2022-05-12 05:59:34: Loading config at /home/test/.local/lib/python3.10/site-packages/newm/default_config.py
+Device '*::kbd_backlight' not found.
+[ERROR] backlight_manager.py:27 2022-05-12 05:59:34: Disabling BacklightManager
+Traceback (most recent call last):
+  File "/home/test/.local/lib/python3.10/site-packages/newm/helper/backlight_manager.py", line 24, in __init__
+    self._current = self._get_current()
+  File "/home/test/.local/lib/python3.10/site-packages/newm/helper/backlight_manager.py", line 99, in _get_current
+    return int(execute("brightnessctl %s g" % self._args))
+ValueError: invalid literal for int() with base 10: ''
+[DEBUG] pywm.py:188 2022-05-12 05:59:34: PyWM init
+[WARNING] auth_backend.py:114 2022-05-12 05:59:34: Could not find greeter: greeter
+[DEBUG] pywm.py:466 2022-05-12 05:59:34: PyWM run
+00:00:00.000 [INFO] [libseat] [libseat/backend/seatd.c:79] Could not connect to socket /run/seatd.sock: No such file or directory
+00:00:00.000 [INFO] [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
+00:00:00.005 [INFO] [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
+00:00:00.006 [INFO] [backend/session/session.c:110] Successfully loaded libseat session
+00:00:00.008 [INFO] [backend/backend.c:220] Found 1 GPUs
+00:00:00.008 [INFO] [backend/drm/backend.c:183] Initializing DRM backend for /dev/dri/card0 (i915)
+00:00:00.008 [DEBUG] [backend/drm/drm.c:85] Using atomic DRM interface
+00:00:00.008 [DEBUG] [backend/drm/drm.c:98] ADDFB2 modifiers supported
+00:00:00.008 [INFO] [backend/drm/drm.c:251] Found 2 DRM CRTCs
+00:00:00.008 [INFO] [backend/drm/drm.c:178] Found 6 DRM planes
+00:00:00.009 [INFO] [render/egl.c:180] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_MESA_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+00:00:00.010 [DEBUG] [render/egl.c:437] Using EGL device /dev/dri/card0
+00:00:00.083 [INFO] [render/egl.c:326] Using EGL 1.5
+00:00:00.083 [INFO] [render/egl.c:327] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_IMG_context_priority EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
+00:00:00.083 [INFO] [render/egl.c:329] Supported EGL device extensions: EGL_EXT_device_drm EGL_EXT_device_drm_render_node
+00:00:00.083 [INFO] [render/egl.c:331] EGL vendor: Mesa Project
+00:00:00.083 [DEBUG] [render/egl.c:158] Supported DMA-BUF formats: AB4H XB4H AR30 XR30 AB30 AR24 AB24 XR24 XB24 AR15 RG16 R8   R16  GR88 GR32 YUV9 YU11 YU12 YU16 YU24 YVU9 YV11 YV12 YV16 YV24 NV12 P010 P012 P016 NV16 AYUV XYUV Y410 Y412 Y416 YUYV UYVY Y210 Y212 Y216 
+00:00:00.083 [DEBUG] [render/egl.c:159] EGL DMA-BUF format modifiers supported
+00:00:00.085 [DEBUG] [render/egl.c:388] Obtained high priority context
+00:00:00.085 [DEBUG] [render/egl.c:485] Using EGL_PLATFORM_DEVICE_EXT
+00:00:00.087 [INFO] [render/gles2/renderer.c:737] Creating GLES2 renderer
+00:00:00.087 [INFO] [render/gles2/renderer.c:738] Using OpenGL ES 3.0 Mesa 22.0.3
+00:00:00.087 [INFO] [render/gles2/renderer.c:739] GL vendor: Intel
+00:00:00.087 [INFO] [render/gles2/renderer.c:740] GL renderer: Mesa Intel(R) HD Graphics 3000 (SNB GT2)
+00:00:00.087 [INFO] [render/gles2/renderer.c:741] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_group_vote GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_texture_border_clamp GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp GL_EXT_blend_func_extended GL_EXT_float_blend GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_texture_shadow_lod GL_INTEL_blackhole_render GL_MESA_framebuffer_flip_y GL_EXT_demote_to_helper_invocation GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_MESA_bgra 
+00:00:00.766 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader rounded_corners_rect at 0
+00:00:00.829 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader corner at 1
+00:00:00.849 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader rect at 2
+00:00:00.883 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader rounded_corners_border at 3
+00:00:00.915 [DEBUG] [../src/wm/wm_renderer.c:114] Setting up quad shaders
+00:00:01.010 [DEBUG] [render/allocator/allocator.c:98] Trying to create gbm allocator
+00:00:01.024 [DEBUG] [render/allocator/gbm.c:203] Created GBM allocator with backend drm
+00:00:01.024 [DEBUG] [render/allocator/gbm.c:206] Using DRM node /dev/dri/card0
+00:00:01.024 [DEBUG] [../src/wm/wm_cursor.c:331] Loading cursor theme 
+00:00:01.024 [DEBUG] [xcursor/wlr_xcursor.c:243] Loaded cursor theme 'default' at size 24 (13 available cursors)
+00:00:01.024 [INFO] [backend/headless/backend.c:69] Creating headless backend
+00:00:01.024 [DEBUG] [../src/wm/wm_server.c:598] Loading cursor theme 
+00:00:01.025 [INFO] [../src/wm/wm.c:54] Running compositor on wayland display 'wayland-0'
+00:00:01.025 [INFO] [../src/wm/wm.c:57] Starting backend...
+00:00:01.025 [DEBUG] [backend/libinput/backend.c:87] Starting libinput backend
+00:00:01.254 [DEBUG] [backend/libinput/events.c:107] Added Power Button [0:1]
+00:00:01.254 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.254 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.475 [DEBUG] [backend/libinput/events.c:107] Added Video Bus [0:6]
+00:00:01.475 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.475 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.496 [DEBUG] [backend/libinput/events.c:107] Added Video Bus [0:6]
+00:00:01.496 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.496 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.514 [DEBUG] [backend/libinput/events.c:107] Added Lid Switch [0:5]
+00:00:01.514 [DEBUG] [backend/libinput/switch.c:23] Created switch for device Lid Switch
+00:00:01.514 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.514 [DEBUG] [../src/wm/wm_seat.c:160] Unsupported input device
+00:00:01.514 [DEBUG] [backend/libinput/events.c:107] Added Sleep Button [0:3]
+00:00:01.514 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.514 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.528 [DEBUG] [backend/libinput/events.c:107] Added USB2.0 0.3M UVC WebCam: USB2.0  [1266:45497]
+00:00:01.528 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.528 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.539 [DEBUG] [backend/libinput/events.c:107] Added Asus WMI hotkeys [0:0]
+00:00:01.539 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.539 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.548 [DEBUG] [backend/libinput/events.c:107] Added AT Translated Set 2 keyboard [1:1]
+00:00:01.548 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.548 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:01.556 [DEBUG] [backend/libinput/events.c:107] Added SynPS/2 Synaptics TouchPad [2:7]
+00:00:01.556 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:01.556 [DEBUG] [../src/wm/wm_seat.c:148] New pointer
+00:00:01.556 [DEBUG] [backend/libinput/backend.c:133] libinput successfully initialized
+00:00:01.556 [INFO] [backend/drm/drm.c:1185] Scanning DRM connectors on /dev/dri/card0
+00:00:01.556 [INFO] [backend/drm/drm.c:1251] Found connector 'LVDS-1'
+00:00:01.556 [INFO] [backend/drm/drm.c:1287] 'LVDS-1' connected
+00:00:01.556 [DEBUG] [backend/drm/drm.c:1288] Current CRTC: 45
+00:00:01.556 [INFO] [backend/drm/drm.c:1298] Physical size: 290x160
+00:00:01.556 [INFO] [backend/drm/drm.c:1338] Detected modes:
+00:00:01.556 [INFO] [backend/drm/drm.c:1360]   1366x768@59973 (preferred)
+00:00:01.557 [INFO] [backend/drm/drm.c:1251] Found connector 'VGA-1'
+00:00:01.559 [INFO] [backend/drm/drm.c:1251] Found connector 'HDMI-A-1'
+00:00:01.559 [INFO] [backend/drm/drm.c:1251] Found connector 'DP-1'
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1047] Reallocating CRTCs
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1058] State before reallocation:
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1064]   'LVDS-1' crtc=0 status=1 desired_enabled=1
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1064]   'VGA-1' crtc=-1 status=0 desired_enabled=0
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1064]   'HDMI-A-1' crtc=-1 status=0 desired_enabled=0
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1064]   'DP-1' crtc=-1 status=0 desired_enabled=0
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1115] State after reallocation:
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1122]   'LVDS-1' crtc=0 status=1 desired_enabled=1
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1122]   'VGA-1' crtc=-1 status=0 desired_enabled=0
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1122]   'HDMI-A-1' crtc=-1 status=0 desired_enabled=0
+00:00:01.559 [DEBUG] [backend/drm/drm.c:1122]   'DP-1' crtc=-1 status=0 desired_enabled=0
+00:00:01.559 [INFO] [backend/drm/drm.c:1412] connector LVDS-1: Requesting modeset
+00:00:01.559 [DEBUG] [../src/wm/wm_server.c:87] Server: New output
+00:00:01.559 [INFO] [../src/wm/wm_output.c:293] New output: Unknown: 0x17D8 (Unknown 0x17D8 0x00000000 (LVDS-1)) - use name: 'LVDS-1' to configure
+00:00:01.559 [INFO] [../src/wm/wm_output.c:219] Output: Output supports 1366x768(59973) (Preferred)
+00:00:01.559 [INFO] [../src/wm/wm_output.c:242] Output: Setting mode: 1366x768(59973)
+00:00:01.559 [DEBUG] [backend/drm/drm.c:492] connector LVDS-1: Can't enable an output without a buffer
+00:00:01.559 [DEBUG] [types/output/render.c:192] Attaching empty buffer to output for modeset
+00:00:01.559 [DEBUG] [types/output/render.c:73] Choosing primary buffer format 0x34325258 for output 'LVDS-1'
+00:00:01.559 [DEBUG] [render/swapchain.c:105] Allocating new swapchain buffer
+00:00:01.561 [DEBUG] [render/allocator/gbm.c:140] Allocated 1366x768 GBM buffer (format 0x34325258, modifier 0x100000000000001)
+00:00:01.561 [DEBUG] [render/gles2/renderer.c:142] Created GL FBO for buffer 1366x768
+00:00:01.582 [INFO] [backend/drm/drm.c:708] connector LVDS-1: Modesetting with '1366x768@59973mHz'
+00:00:01.601 [INFO] [../src/wm/wm_output.c:281] Output: Setting scale to 1.000000
+00:00:01.618 [INFO] [../src/wm/wm_layout.c:68] Layout: Placing automatically
+00:00:01.618 [DEBUG] [../src/wm/wm_layout.c:31] Following master output: 0
+[DEBUG] pywm.py:335 2022-05-12 05:59:36: PyWM layout change:
+[DEBUG] pywm.py:337 2022-05-12 05:59:36:   Output(LVDS-1) key=0 with 1366x768, scale 1.000000 at 0, 0
+[DEBUG] layout.py:398 2022-05-12 05:59:36: Setup of newm workspaces
+[DEBUG] layout.py:400 2022-05-12 05:59:36:   Workspace[0] at 0, 0 --> 1366, 768
+00:00:02.301 [DEBUG] [../src/wm/wm.c:149] 
+TIMER[callback_layout_change        ] X:  682.47ms ( 682.47ms max),  0.10Hz
+00:00:02.301 [INFO] [backend/headless/backend.c:17] Starting headless backend
+00:00:02.301 [INFO] [../src/wm/wm.c:75] Main...
+00:00:02.301 [DEBUG] [render/swapchain.c:105] Allocating new swapchain buffer
+00:00:02.302 [DEBUG] [render/allocator/gbm.c:140] Allocated 1366x768 GBM buffer (format 0x34325258, modifier 0x100000000000001)
+00:00:02.302 [DEBUG] [render/gles2/renderer.c:142] Created GL FBO for buffer 1366x768
+00:00:02.302 [DEBUG] [../src/wm/wm_renderer.c:510] Initialising renderer buffers for output: 1366x768
+00:00:02.306 [DEBUG] [../src/wm/wm_output.c:173] 
+TIMER[render                        ] .:    4.00ms (   4.00ms max),  0.10Hz
+00:00:02.307 [DEBUG] [../src/py/_pywmmodule.c:145] 
+TIMER[callback_update_pywm          ]  :    0.12ms (   0.12ms max),  0.10Hz
+00:00:02.307 [DEBUG] [../src/py/_pywmmodule.c:150] 
+TIMER[callback_update_views         ]  :    0.00ms (   0.00ms max),  0.10Hz
+00:00:02.307 [DEBUG] [../src/py/_pywm_widget.c:212] 
+TIMER[callback_update_widgets_single]  :    0.27ms (   0.27ms max),  0.10Hz
+00:00:02.307 [DEBUG] [../src/py/_pywmmodule.c:156] 
+TIMER[callback_update_widgets       ]  :    0.30ms (   0.30ms max),  0.10Hz
+00:00:02.307 [DEBUG] [../src/wm/wm.c:374] 
+TIMER[callback_update               ]  :    0.49ms (   0.49ms max),  0.10Hz
+00:00:02.373 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (36.00ms)
+00:00:02.420 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (33.00ms)
+00:00:02.504 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (33.00ms)
+00:00:04.626 [DEBUG] [../src/wm/wm.c:188] 
+TIMER[callback_motion               ]  :    0.18ms (   0.18ms max),  0.10Hz
+00:00:12.319 [DEBUG] [../src/wm/wm_output.c:173] 
+TIMER[render                        ] X:    0.88ms (  20.08ms max),  7.50Hz
+00:00:14.856 [DEBUG] [../src/wm/wm.c:188] 
+TIMER[callback_motion               ]  :    0.15ms (   0.21ms max), 13.30Hz
+00:00:20.665 [DEBUG] [../src/wm/wm.c:162] 
+TIMER[callback_key                  ]  :    0.25ms (   0.25ms max),  0.10Hz
+[DEBUG] layout.py:791 2022-05-12 05:59:55: Resetting gesture
+00:00:20.666 [DEBUG] [../src/wm/wm.c:175] 
+TIMER[callback_modifiers            ]  :    0.50ms (   0.50ms max),  0.10Hz
+[DEBUG] layout.py:791 2022-05-12 05:59:56: Resetting gesture
+00:00:22.273 [DEBUG] [backend/libinput/events.c:226] Removing AT Translated Set 2 keyboard [1:1]
+00:00:22.274 [DEBUG] [backend/libinput/events.c:226] Removing USB2.0 0.3M UVC WebCam: USB2.0  [1266:45497]
+00:00:22.274 [DEBUG] [backend/libinput/events.c:226] Removing Power Button [0:1]
+00:00:22.275 [DEBUG] [backend/libinput/events.c:226] Removing SynPS/2 Synaptics TouchPad [2:7]
+00:00:22.405 [DEBUG] [backend/libinput/events.c:226] Removing Lid Switch [0:5]
+00:00:22.406 [DEBUG] [backend/libinput/events.c:226] Removing Sleep Button [0:3]
+00:00:22.406 [DEBUG] [backend/libinput/events.c:226] Removing Asus WMI hotkeys [0:0]
+00:00:22.407 [DEBUG] [backend/libinput/events.c:226] Removing Video Bus [0:6]
+00:00:22.407 [DEBUG] [backend/libinput/events.c:226] Removing Video Bus [0:6]
+00:00:27.906 [INFO] [libseat] [libseat/backend/logind.c:316] Disabling seat
+00:00:27.906 [INFO] [backend/drm/backend.c:124] DRM fd paused
